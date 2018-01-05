@@ -1,0 +1,65 @@
+
+
+import UIKit
+
+// Enumaration ayný tipteki benzer yapýlarý gruplamada kullanýlýr
+
+// enum sözcüðü kullanýlýr
+
+// Oyun yazýlýmcýsý Hareket alaný tanýmlayalým
+
+enum HareketAlaný{
+
+    case sag
+
+    case sol
+
+    case asagi
+
+    case yukari
+
+}
+
+let solHareket = HareketAlaný.sol
+
+let sagHareket = HareketAlaný.sag
+
+var yerindeSay = HareketAlaný.sol
+
+yerindeSay = .sag
+
+enum Sayilar:Int{
+
+    case Bir = 1, iki, Uc, Dort, Bes
+
+}
+
+let bes = Sayilar.Bes
+
+print(bes.rawValue)
+
+enum Hata:Error{
+
+    case sunucuHatasi(sebep:String)
+
+    case kullaniciHatasi(sebep:String)
+
+}
+
+let hata = Hata.kullaniciHatasi(sebep: "Kullanýcý hatalýdýr")
+
+print(hata)
+
+enum Sehirler:String{
+
+    
+
+    case Ankara = "Baþkenttir"
+
+    case Adana = "Bici bici talýsý ile meþhurdur"
+
+}
+
+let sehir  = Sehirler.Adana
+
+print(sehir.rawValue)
